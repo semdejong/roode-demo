@@ -17,7 +17,7 @@ export function CallLinks({ tone = "light" }: { tone?: "light" | "dark" }) {
         Mail voor een prijsopgave
       </a>
       <a
-        className={`text-link inline-flex min-h-11 items-center max-md:self-end ${onDark ? "text-paper decoration-paper" : ""}`}
+        className={`text-link hidden min-h-11 items-center self-start md:inline-flex ${onDark ? "text-paper decoration-paper" : ""}`}
         href={c.mobileHref}
         data-cta="bellen"
       >

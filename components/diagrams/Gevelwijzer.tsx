@@ -13,7 +13,7 @@ export function Gevelwijzer() {
         <div
           role="group"
           aria-label="Gevelwijzer, bovenaanzicht van een huis"
-          className="mx-auto grid aspect-square w-full max-w-[400px] grid-cols-[72px_minmax(0,1fr)_72px] grid-rows-[72px_minmax(0,1fr)_72px]"
+          className="mx-auto grid aspect-square w-full max-w-[400px] grid-cols-[72px_minmax(0,1fr)_72px] grid-rows-[72px_minmax(0,1fr)_72px] gap-1"
         >
           <div />
           <EdgeButton id="N" active={active} onSelect={setActive} className="items-end justify-center pb-2" />
@@ -69,7 +69,10 @@ function EdgeButton({
       onClick={() => onSelect(id)}
       className={`flex min-h-11 min-w-11 font-mono text-[13px] ${facade.sooner ? "text-amber-ink" : "text-foreground"} ${className}`}
     >
-      <span className={selected ? "border-b-2 border-current" : ""}>{id}</span>
+      <span className="inline-flex items-center gap-1.5">
+        <span className={`h-1.5 w-1.5 ${selected ? "bg-current" : "bg-transparent"}`} aria-hidden />
+        {id}
+      </span>
     </button>
   );
 }

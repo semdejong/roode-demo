@@ -38,21 +38,21 @@ export default function BuitenPage() {
           <p className="mt-10 max-w-[22ch] font-display text-[2rem] font-extrabold leading-tight sm:text-[2.6rem]">
             Op tijd schilderen voorkomt hoge kosten.
           </p>
-          <div className="mt-12 grid items-start gap-10 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-              <h2 className="text-[1.8rem] sm:text-[2.2rem]">Welke gevel eerst?</h2>
-              <div className="mt-8">
-                <Gevelwijzer />
-              </div>
+          <div className="mt-12">
+            <h2 className="text-[1.8rem] sm:text-[2.2rem]">Welke gevel eerst?</h2>
+            <div className="mt-8">
+              <Gevelwijzer />
             </div>
-            <div className="lg:col-span-5 lg:pt-16">
+          </div>
+          <div className="mt-16 grid items-start gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-5">
               <h2 className="text-[1.8rem] sm:text-[2.2rem]">Liggende delen</h2>
               <p className="mt-4">
                 Blaasjes en scheurtjes komen het eerst op delen die water vasthouden. De vensterbank is daar het bekende voorbeeld.
               </p>
-              <div className="mt-6">
-                <LiggendDeel />
-              </div>
+            </div>
+            <div className="lg:col-span-6 lg:col-start-7">
+              <LiggendDeel />
             </div>
           </div>
           <h2 className="mt-16 text-[1.8rem] sm:text-[2.2rem]">Waarom het ertoe doet</h2>

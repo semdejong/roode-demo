@@ -43,8 +43,7 @@ export default function Home() {
         <Container>
           <ul className="grid grid-cols-2 md:grid-cols-4">
             {facts.map((fact) => (
-              <li key={fact} className="border-l border-foreground/20 px-4 py-4 font-mono text-[12px] leading-snug sm:text-[13px]">
-                <span className="mb-3 block h-2 w-px bg-foreground" aria-hidden />
+              <li key={fact} className="border-t-2 border-foreground px-4 py-3 font-mono text-[12px] leading-snug sm:text-[13px]">
                 {fact}
               </li>
             ))}
@@ -82,9 +81,7 @@ export default function Home() {
         <Container className="grid gap-10 py-16 md:py-20 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <h2 className="text-[1.9rem] sm:text-[2.5rem]">Eerst de ondergrond</h2>
-            <p className="mt-4">
-              Een huis schilderen gaat verder dan een likje verf. De voorbereiding is de basis, binnen en buiten.
-            </p>
+            <p className="mt-4">De verf komt pas na de ondergrond. Dat geldt binnen en buiten, op hout en op stucwerk.</p>
             <p className="mt-4">
               <Link href="/uw-huis-schilderen" className="text-link">
                 Waarom dat werk vaak wordt uitbesteed
@@ -213,10 +210,10 @@ export default function Home() {
       </section>
 
       <section data-section="winter" className="border-t border-foreground/15">
-        <Container className="grid gap-4 py-14 md:grid-cols-12 md:py-16">
-          <p className="font-mono text-[12px] text-amber-ink md:col-span-3">nov–mrt</p>
-          <div className="md:col-span-8">
-            <h2 className="max-w-[18ch] text-[1.9rem] sm:text-[2.4rem]">In de winter vaak voordeliger. Vraag ernaar.</h2>
+        <Container className="py-14 md:py-16">
+          <p className="font-mono text-[12px] text-amber-ink">nov–mrt · winterschilder</p>
+          <div className="mt-3 max-w-[40rem]">
+            <h2 className="max-w-[16ch] text-[1.9rem] sm:text-[2.4rem]">In de winter vaak voordeliger. Vraag ernaar.</h2>
             <p className="mt-4 max-w-[40rem]">
               In de winter is er vaak minder werk. Daarom is een winterschilder in die periode voordeliger. Vraag Jeroen ernaar.
               Hij treft extra voorzieningen, zodat het schilderwerk ook bij koude weersomstandigheden goed uitgevoerd kan worden.

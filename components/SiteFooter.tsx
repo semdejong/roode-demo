@@ -8,7 +8,7 @@ export function SiteFooter() {
 
   return (
     <footer data-section="footer" className="border-t border-foreground/15">
-      <Container className="grid gap-10 py-12 pb-28 md:grid-cols-12 md:pb-12">
+      <Container className="grid gap-10 py-12 pb-32 md:grid-cols-12 md:pb-20">
         <div className="md:col-span-5">
           <Logo className="h-8 w-auto" />
           <p className="mt-4 font-display text-[1.35rem] font-bold">{company.name}</p>

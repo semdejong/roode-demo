@@ -26,16 +26,14 @@ export function SeasonRuler({ variant = "full" }: { variant?: "full" | "mini" })
         aria-hidden={mini ? true : undefined}
         aria-label={mini ? undefined : LABEL}
       >
-        <div className="grid grid-cols-12">
-          <div className="col-span-3 border-t border-foreground" />
-          <div className="col-span-7 border-t-2 border-accent" />
-          <div className="col-span-2 border-t border-foreground" />
-        </div>
-        <ol className={`grid grid-cols-12 ${mini ? "mt-1" : "mt-2"}`}>
+        <ol className="grid grid-cols-12">
           {MONTHS.map((month) => (
-            <li key={month.key} className="flex flex-col items-center">
+            <li
+              key={month.key}
+              className={`flex flex-col items-center border-t-2 ${month.buiten ? "border-accent" : "border-foreground"}`}
+            >
               <span
-                className={month.buiten ? "h-4 w-px bg-accent" : "h-2 w-px bg-foreground"}
+                className={month.buiten ? "mt-1 h-4 w-px bg-accent" : "mt-1 h-2 w-px bg-foreground"}
                 aria-hidden
               />
               <span className={`mt-1 font-mono text-muted ${mini ? "text-[9px] sm:text-[11px]" : "text-[10px] sm:text-[12px]"}`}>

@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { QuoteBand } from "@/components/QuoteBand";
 import { RuledRows } from "@/components/RuledRows";
 import { SiteFrame } from "@/components/SiteFrame";
+import { PrepScale } from "@/components/diagrams/PrepScale";
 
 export const metadata: Metadata = {
   title: "Uw huis schilderen",
@@ -46,11 +47,11 @@ export default function HuisPage() {
           </p>
           <h2 className="mt-16 text-[1.8rem] sm:text-[2.2rem]">Zelf, of uitbesteden</h2>
           <p className="mt-4 max-w-[42rem]">
-            Een huis schilderen gaat verder dan een likje verf. Goed schuren, ontvetten, plamuren en grondverven is de basis. Ook de ondergrond voorbereiden of repareren hoort erbij. Zelf doen kost behoorlijk wat tijd. Daarom schakelen ook ervaren doe-het-zelvers vaak een schilder in.
+            Zelf doen kost behoorlijk wat tijd. Daarom schakelen ook ervaren doe-het-zelvers vaak een schilder in. De schilder kent bovendien het verschil tussen de verf op het badkamerplafond en die in de woonkamer.
           </p>
-          <p className="mt-4 max-w-[42rem]">
-            Voor het plafond in de badkamer wordt een andere verf gebruikt dan voor het plafond in de woonkamer. Een huisschilder kent dat verschil.
-          </p>
+          <div className="mt-8">
+            <PrepScale />
+          </div>
           <p className="mt-8">
             <Link href="/binnenschilderwerk" className="text-link">
               Binnen

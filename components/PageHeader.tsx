@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { SeasonRuler } from "@/components/diagrams/SeasonRuler";
 
@@ -6,7 +7,7 @@ export function PageHeader({
   lede,
   mark,
 }: {
-  title: string;
+  title: ReactNode;
   lede: string;
   mark?: "lood";
 }) {

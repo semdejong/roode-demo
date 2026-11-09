@@ -50,7 +50,21 @@ export default function ContactPage() {
             </p>
           </div>
           <div className="lg:col-span-7">
-            <h2 className="text-[1.6rem]">Bericht opstellen</h2>
+            <h2 className="text-[1.6rem]">Wat Jeroen nodig heeft</h2>
+            <ul className="mt-4 border-t border-foreground/20">
+              {[
+                ["Naam", "Hoe hij u terug kan noemen."],
+                ["Telefoon", "Vast of mobiel, zodat hij kan terugbellen."],
+                ["Adres en plaats", "In Ruurlo of in de omgeving."],
+                ["Het werk", "Binnen, buiten, glas, of een combinatie. Welk deel van het huis."],
+              ].map(([title, text]) => (
+                <li key={title} className="grid gap-1 border-b border-foreground/20 py-3 sm:grid-cols-12 sm:gap-4">
+                  <span className="font-mono text-[12px] text-amber-ink sm:col-span-4">{title}</span>
+                  <span className="sm:col-span-8">{text}</span>
+                </li>
+              ))}
+            </ul>
+            <h2 className="mt-10 text-[1.6rem]">Bericht opstellen</h2>
             <div className="mt-5">
               <MailForm />
             </div>

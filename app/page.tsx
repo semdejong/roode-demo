@@ -6,6 +6,7 @@ import { FaqList } from "@/components/FaqList";
 import { GlasPhoto, JeroenPhoto } from "@/components/Photos";
 import { SiteFrame } from "@/components/SiteFrame";
 import { Gevelwijzer } from "@/components/diagrams/Gevelwijzer";
+import { PrepScale } from "@/components/diagrams/PrepScale";
 import { SeasonRuler } from "@/components/diagrams/SeasonRuler";
 import { SunArc } from "@/components/diagrams/SunArc";
 import { WerkgebiedRoos } from "@/components/diagrams/WerkgebiedRoos";
@@ -74,6 +75,25 @@ export default function Home() {
               Uw huis schilderen: bescherming, woonplezier en waarde
             </Link>
           </p>
+        </Container>
+      </section>
+
+      <section data-section="basis" className="border-t border-foreground/15">
+        <Container className="grid gap-10 py-16 md:py-20 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <h2 className="text-[1.9rem] sm:text-[2.5rem]">Eerst de ondergrond</h2>
+            <p className="mt-4">
+              Een huis schilderen gaat verder dan een likje verf. De voorbereiding is de basis, binnen en buiten.
+            </p>
+            <p className="mt-4">
+              <Link href="/uw-huis-schilderen" className="text-link">
+                Waarom dat werk vaak wordt uitbesteed
+              </Link>
+            </p>
+          </div>
+          <div className="lg:col-span-8">
+            <PrepScale />
+          </div>
         </Container>
       </section>
 

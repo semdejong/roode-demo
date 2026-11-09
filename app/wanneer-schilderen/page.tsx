@@ -3,7 +3,9 @@ import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { QuoteBand } from "@/components/QuoteBand";
 import { SiteFrame } from "@/components/SiteFrame";
+import { ConditiePlaat } from "@/components/diagrams/ConditiePlaat";
 import { Gevelwijzer } from "@/components/diagrams/Gevelwijzer";
+import { LiggendDeel } from "@/components/diagrams/LiggendDeel";
 import { SeasonRuler } from "@/components/diagrams/SeasonRuler";
 import { Zelftest } from "@/components/diagrams/Zelftest";
 
@@ -51,6 +53,9 @@ export default function WanneerPage() {
               </li>
             ))}
           </ul>
+          <div className="mt-8">
+            <LiggendDeel />
+          </div>
         </Container>
       </section>
       <section data-section="seizoen" className="border-t border-foreground/15">
@@ -61,6 +66,9 @@ export default function WanneerPage() {
           </p>
           <div className="mt-8">
             <SeasonRuler />
+          </div>
+          <div className="mt-8">
+            <ConditiePlaat />
           </div>
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             <div>

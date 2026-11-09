@@ -5,7 +5,9 @@ import { PageHeader } from "@/components/PageHeader";
 import { QuoteBand } from "@/components/QuoteBand";
 import { RuledRows } from "@/components/RuledRows";
 import { SiteFrame } from "@/components/SiteFrame";
+import { ConditiePlaat } from "@/components/diagrams/ConditiePlaat";
 import { Gevelwijzer } from "@/components/diagrams/Gevelwijzer";
+import { LiggendDeel } from "@/components/diagrams/LiggendDeel";
 
 export const metadata: Metadata = {
   title: "Buitenschilderwerk",
@@ -17,7 +19,12 @@ export default function BuitenPage() {
   return (
     <SiteFrame>
       <PageHeader
-        title="Buitenschilderwerk"
+        title={
+          <>
+            Buiten
+            <span className="block">schilderwerk</span>
+          </>
+        }
         lede="Het buitenschilderwerk van uw woning is regelmatig aan een nieuwe laag toe. Goed schilderwerk beschermt het huis."
       />
       <section data-section="buiten">
@@ -31,10 +38,21 @@ export default function BuitenPage() {
           <p className="mt-10 max-w-[22ch] font-display text-[2rem] font-extrabold leading-tight sm:text-[2.6rem]">
             Op tijd schilderen voorkomt hoge kosten.
           </p>
-          <div className="mt-12">
-            <h2 className="text-[1.8rem] sm:text-[2.2rem]">Welke gevel eerst?</h2>
-            <div className="mt-8">
-              <Gevelwijzer />
+          <div className="mt-12 grid items-start gap-10 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <h2 className="text-[1.8rem] sm:text-[2.2rem]">Welke gevel eerst?</h2>
+              <div className="mt-8">
+                <Gevelwijzer />
+              </div>
+            </div>
+            <div className="lg:col-span-5 lg:pt-16">
+              <h2 className="text-[1.8rem] sm:text-[2.2rem]">Liggende delen</h2>
+              <p className="mt-4">
+                Blaasjes en scheurtjes komen het eerst op delen die water vasthouden. De vensterbank is daar het bekende voorbeeld.
+              </p>
+              <div className="mt-6">
+                <LiggendDeel />
+              </div>
             </div>
           </div>
           <h2 className="mt-16 text-[1.8rem] sm:text-[2.2rem]">Waarom het ertoe doet</h2>
@@ -57,12 +75,19 @@ export default function BuitenPage() {
               },
             ]}
           />
+          <h2 className="mt-16 text-[1.8rem] sm:text-[2.2rem]">Het weer op de dag zelf</h2>
+          <p className="mt-4 max-w-[42rem]">
+            Buitenschilderwerk het liefst tussen april en oktober. Drie aflezingen bepalen of de dag geschikt is.
+          </p>
+          <div className="mt-6 max-w-[52rem]">
+            <ConditiePlaat />
+          </div>
           <h2 className="mt-16 text-[1.8rem] sm:text-[2.2rem]">Waar Jeroen op let</h2>
           <RuledRows
             items={[
               {
                 title: "Weer",
-                text: "Buitenschilderwerk het liefst tussen april en oktober. De temperatuur tussen 10 en 25 °C, de luchtvochtigheid op maximaal 75%.",
+                text: "April tot oktober. Temperatuur, luchtvochtigheid en de zon bepalen of de dag geschikt is. In de winter is er vaak minder werk, en dan een voordeel. Vraag ernaar.",
               },
               {
                 title: "Verf",

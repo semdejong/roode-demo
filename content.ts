@@ -1,102 +1,145 @@
 /**
- * ÉÉN bestand om aan te passen per demo.
- * Kopieer de starter, vul hieronder de gegevens van de prospect in, klaar.
+ * Gegevens van Roode Schilderwerk voor deze conceptsite.
+ * Alleen feiten die op hun eigen pagina's staan. Geen KvK, btw, openingstijden,
+ * recensies, projecten, prijzen of kortingspercentages.
  */
 export const content = {
-  // Slug = Vercel-project- en GitHub-reponaam (eindigt op "-demo"). Wordt door scripts/new-demo.sh gezet.
-  // Ook de "data-demo" voor de Sleads demo-analytics tracker.
   slug: "roode-demo",
 
   company: {
-    name: "Voorbeeldbedrijf",
-    tagline: "Vakmanschap uit de regio, sinds 1998",
+    name: "Roode Schilderwerk",
+    legalLine: "Roode dienstverlening",
+    person: "Jeroen Roode",
+    tagline: "Eenmans schildersbedrijf sinds november 2006",
     description:
-      "Wij helpen particulieren en bedrijven met betrouwbaar werk, eerlijk advies en een persoonlijke aanpak.",
-    logo: "/logo.png", // zet het logo in /public en pas het pad aan ("" = alleen tekst)
-    city: "Utrecht",
+      "Roode schilderwerk is een betrouwbaar eenmans schilderbedrijf. Jeroen Roode werkt sinds november 2006 voor bedrijven en particulieren in Ruurlo en omgeving.",
+    logo: "/img/roode-logo-transparent.png",
+    city: "Ruurlo",
   },
 
-  // Huisstijlkleuren van de prospect (hex)
   colors: {
-    primary: "#1d4ed8",
-    primaryForeground: "#ffffff",
-    accent: "#f59e0b",
-    background: "#ffffff",
-    foreground: "#0f172a",
-    muted: "#f1f5f9",
+    primary: "#4A2340",
+    primaryForeground: "#FFFFFF",
+    accent: "#C17A12",
+    background: "#F3F2EE",
+    foreground: "#2F3033",
+    muted: "#5A5B5E",
+    paper: "#FFFFFF",
+    amberInk: "#8A5208",
+    lood: "#2F6B3A",
   },
 
   seo: {
-    title: "Voorbeeldbedrijf | Vakmanschap uit Utrecht",
-    description: "Conceptwebsite voor Voorbeeldbedrijf.",
+    title: "Schilderwerk in en rond Ruurlo | Roode Schilderwerk",
+    description:
+      "Jeroen Roode schildert binnen en buiten en zet glas, voor bedrijven en particulieren in Ruurlo en omgeving. Sinds november 2006. Vrijblijvende prijsopgave.",
     lang: "nl",
   },
 
-  nav: [
-    { label: "Diensten", href: "#diensten" },
-    { label: "Over ons", href: "#over-ons" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "Contact", href: "#contact" },
+  about: [
+    "Roode schilderwerk is een betrouwbaar eenmans schilderbedrijf.",
+    "Na 20 jaar ervaring als schilder te hebben opgedaan is Jeroen zijn eigen bedrijf begonnen.",
+    "Sinds november 2006 is Jeroen Roode werkzaam als schilder voor verschillende bedrijven en particulieren in Ruurlo en omgeving.",
   ],
 
-  hero: {
-    title: "Vakwerk waar u op kunt bouwen",
-    subtitle:
-      "Snel geregeld, duidelijk geprijsd en netjes opgeleverd. Vraag vandaag nog vrijblijvend een offerte aan.",
-    primaryCta: { label: "Offerte aanvragen", href: "#contact" },
-    secondaryCta: { label: "Bekijk onze diensten", href: "#diensten" },
-    image: "", // bv. "/hero.jpg" in /public of een externe URL; leeg = kleurverloop
-    highlights: ["25+ jaar ervaring", "Gratis advies aan huis", "Garantie op al ons werk"],
-  },
-
-  services: {
-    title: "Onze diensten",
-    intro: "Alles onder één dak, van eerste advies tot oplevering.",
-    items: [
-      { icon: "🛠️", title: "Dienst één", text: "Korte omschrijving van wat deze dienst inhoudt en wat de klant eraan heeft." },
-      { icon: "📐", title: "Dienst twee", text: "Korte omschrijving van wat deze dienst inhoudt en wat de klant eraan heeft." },
-      { icon: "✅", title: "Dienst drie", text: "Korte omschrijving van wat deze dienst inhoudt en wat de klant eraan heeft." },
-    ],
-  },
-
-  about: {
-    title: "Over ons",
-    text: [
-      "Wat begon als een klein familiebedrijf is uitgegroeid tot een vertrouwd adres in de regio.",
-      "We werken met vaste vakmensen, houden ons aan afspraken en staan ook na de oplevering voor u klaar.",
-    ],
-    image: "", // optioneel
-    stats: [
-      { value: "25+", label: "jaar ervaring" },
-      { value: "1.200+", label: "tevreden klanten" },
-      { value: "9,2", label: "gemiddeld cijfer" },
-    ],
-  },
-
-  reviews: {
-    title: "Wat klanten zeggen",
-    items: [
-      { name: "Familie Jansen", text: "Netjes en snel gewerkt, precies volgens afspraak. Echt een aanrader!", rating: 5 },
-      { name: "Petra de Vries", text: "Duidelijke communicatie en een eerlijke prijs. We komen zeker terug.", rating: 5 },
-      { name: "Mark Bakker", text: "Vakkundig advies en mooi resultaat. Heel tevreden.", rating: 5 },
-    ],
-  },
-
   contact: {
-    title: "Neem contact op",
-    text: "Bel, mail of kom langs. We reageren binnen één werkdag.",
-    phone: "030 123 45 67",
-    email: "info@voorbeeldbedrijf.nl",
-    address: "Voorbeeldstraat 1, 1234 AB Utrecht",
-    openingHours: ["Ma t/m vr: 08:00 – 17:30", "Za: 09:00 – 13:00"],
-    whatsapp: "", // bv. "31612345678" (zonder +)
-    cta: { label: "Bel direct", href: "tel:0301234567" },
+    phoneDisplay: "0573 – 451484",
+    phoneHref: "tel:+31573451484",
+    mobileDisplay: "06-11 44 52 84",
+    mobileHref: "tel:+31611445284",
+    email: "roode@schilder-ruurlo.nl",
+    mailHref: "mailto:roode@schilder-ruurlo.nl?subject=Vrijblijvende%20prijsopgave",
+    street: "Wilhelminalaan 35",
+    postalCode: "7261 BP",
+    city: "Ruurlo",
+    mapsHref:
+      "https://www.google.com/maps/search/?api=1&query=Wilhelminalaan%2035%2C%207261%20BP%20Ruurlo",
   },
 
-  footer: {
-    kvk: "", // bv. "KvK 12345678"
-    socials: [] as { label: string; href: string }[],
-  },
+  areas: ["Ruurlo", "Lochem", "Groenlo", "Zelhem", "Barchem", "Neede", "Eibergen", "Borculo"],
+
+  schilderNav: [
+    { href: "/schilderwerk", label: "Overzicht" },
+    { href: "/binnenschilderwerk", label: "Binnenschilderwerk" },
+    { href: "/buitenschilderwerk", label: "Buitenschilderwerk" },
+    { href: "/uw-huis-schilderen", label: "Uw huis schilderen" },
+  ],
+
+  mainNav: [
+    { href: "/wanneer-schilderen", label: "Wanneer schilderen" },
+    { href: "/glaszetten", label: "Glaszetten" },
+    { href: "/over-jeroen", label: "Over Jeroen" },
+    { href: "/contact", label: "Contact" },
+  ],
+
+  services: [
+    {
+      href: "/binnenschilderwerk",
+      title: "Binnenschilderwerk",
+      text: "Muren, plafonds, kozijnen, trappen, vloeren en de badkamer. Meestal acrylverf op waterbasis.",
+    },
+    {
+      href: "/buitenschilderwerk",
+      title: "Buitenschilderwerk",
+      text: "Kozijnen, deuren, gevelbetimmering, buitenmuren en schutting of erfafscheiding. Ongeveer eens per vijf jaar.",
+    },
+    {
+      href: "/glaszetten",
+      title: "Glaszetten",
+      text: "Isolatieglas en dubbelglas, enkelglas, glas in lood, en glas in lood in dubbel glas.",
+    },
+  ],
+
+  facades: [
+    {
+      id: "N" as const,
+      label: "Noord",
+      sooner: false,
+      text: "Schilderwerk op het noorden heeft minder vaak aandacht nodig.",
+    },
+    {
+      id: "O" as const,
+      label: "Oost",
+      sooner: false,
+      text: "Schilderwerk op het oosten heeft minder vaak aandacht nodig.",
+    },
+    {
+      id: "Z" as const,
+      label: "Zuid",
+      sooner: true,
+      text: "Schilderwerk op het zuiden is eerder aan onderhoud toe, door de invloed van zon en regen.",
+    },
+    {
+      id: "W" as const,
+      label: "West",
+      sooner: true,
+      text: "Schilderwerk op het westen is eerder aan onderhoud toe, door de invloed van zon en regen.",
+    },
+  ],
+
+  faq: [
+    {
+      q: "Hoe vaak is schilderwerk aan de beurt?",
+      a: "Buitenschilderwerk is ongeveer eens per vijf jaar toe aan een nieuwe laag. Op het zuiden en westen eerder, door zon en regen; op het noorden en oosten minder vaak. Binnenschilderwerk, zoals kozijnen en deuren, is ongeveer eens per zeven jaar aan de beurt. Trappen en andere delen die harder slijten, eerder. Bij lak of beits kan onderhoud vaker nodig zijn.",
+    },
+    {
+      q: "Wat is de beste periode om buiten te schilderen?",
+      a: "Tussen april en oktober. De temperatuur ligt dan bij voorkeur tussen 10 en 25 °C en de luchtvochtigheid op maximaal 75%. Jeroen werkt „achter de zon aan”: beginnen waar de zon die dag al geweest is. In de volle zon warmt de verf op en verdampt het oplosmiddel te snel. Is de luchtvochtigheid te hoog, dan kan er condens tussen de verflagen ontstaan.",
+    },
+    {
+      q: "Welke verf wordt binnen en buiten gebruikt?",
+      a: "Voor binnenschilderwerk meestal acrylverf: een verf op waterbasis, zonder oplosmiddelen, met nauwelijks geur, die snel droogt. Die is er dekkend, als transparante lak of als beits. Badkamer en kelder vragen om vocht- en schimmelwerende verf. Aan de binnenzijde van kozijnen en deuren in de buitengevel komt dampwerende verf, zodat vocht van binnen niet in het hout trekt. Buiten is een sterke hoogglanslak, ook wel alkydverf genoemd, verstandig.",
+    },
+    {
+      q: "Gelden er kleurafspraken met de gemeente?",
+      a: "Voor een straat of een deel van de wijk kunnen kleurafspraken gelden. Woont u in een monumentaal huis, dan kunt u verplicht zijn bepaalde kleuren te gebruiken. Vraag dat vooraf bij de gemeente, dan staat u achteraf niet voor verrassingen.",
+    },
+    {
+      q: "Kan dubbel glas samen met ventilatieroosters?",
+      a: "Ja. Dubbel glas kan ook in combinatie met ventilatieroosters. Daarnaast plaatst Roode Schilderwerk isolatieglas en dubbelglas, enkelglas, glas in lood, en glas in lood in dubbel glas.",
+    },
+  ],
 };
 
 export type Content = typeof content;
+export type FacadeId = (typeof content.facades)[number]["id"];

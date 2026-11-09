@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: "/referenties", destination: "/over-jeroen", permanent: false },
+    ];
+  },
 };
 
 export default nextConfig;
